@@ -5,9 +5,8 @@ from tkinter import *
 import tkinter as tk
 from PIL import ImageGrab, Image, ImageEnhance
 import pytesseract
-# pytesseract.pytesseract.tesseract_cmd = r"/opt/homebrew/lib/python3.10/site-packages/pytesseract"
 #.strip("‪u202a")
-
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 class App(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
